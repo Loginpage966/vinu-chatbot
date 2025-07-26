@@ -62,7 +62,7 @@ body {
 
 /* Chat messages area */
 #chatbox {
-  flex: 1;
+  flex: ;
   padding: 20px 25px;
   overflow-y: auto;
   background: #f8f9fc;
