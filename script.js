@@ -115,6 +115,23 @@ async function getBotReply(message) {
     { keywords: ["pathogen"], reply: "A pathogen is a microorganism that can cause disease in its host. Pathogens can include bacteria, viruses, fungi, and protozoa, and they can infect humans, animals, and plants." },
     { keywords: ["disease"], reply: "A disease is a disorder of structure or function in a living organism, often characterized by specific signs and symptoms. Diseases can be caused by various factors, including pathogens, genetic mutations, environmental influences, and lifestyle choices." },
     { keywords: ["antibiotic"], reply: "An antibiotic is a type of medication used to treat bacterial infections by killing or inhibiting the growth of bacteria. Antibiotics are ineffective against viral infections." },
+    { keywords: ["examples for antibiotics"], reply: "Some common examples of antibiotics include penicillin, amoxicillin, and ciprofloxacin." },
+    { keywords: ["toxins"], reply: "Bio-chemical substances produced by pathogenic bacteria which harm the host's activity are known as toxins.    This is the definition for toxins, is there anything else to talk about." },
+    { keywords: ["countries in the world"], reply: `
+      <strong>🌍 Here are some countries in the world:</strong><br>
+      <ul>
+        <li>🇺🇸 United States</li>
+        <li>🇮🇳 India</li>
+        <li>🇧🇷 Brazil</li>
+        <li>🇯🇵 Japan</li>
+        <li>🇫🇷 France</li>
+        <li>🇬🇧 United Kingdom</li>
+        <li>🇨🇳 China</li>
+        <li>🇿🇦 South Africa</li>
+        <li>🇷🇺 Russia</li>
+        <li>🇪🇬 Egypt</li>
+      </ul>
+    ` }
 ];
 
   for (let item of responses) {
@@ -159,5 +176,7 @@ document.getElementById("userInput").addEventListener("keydown", function (event
     event.preventDefault(); // Stop it from adding a newline
     sendMessage(); // Call the same function as the send button
   }
+});
+
 });
 
