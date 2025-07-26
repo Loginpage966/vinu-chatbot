@@ -60,7 +60,7 @@ async function getBotReply(message) {
     lower.startsWith("what are ") ||
     lower.startsWith("tell me about ")
   ) {
-    const topic = message.replace(/(wh is |wht is |tll me about )/i, "").trim();
+    const topic = message.replace(/(who is |what is |what are |tell me about )/i, "").trim();
     return await fetchFromWikipedia(topic);
   }
 
