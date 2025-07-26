@@ -62,7 +62,7 @@ body {
 
 /* Chat messages area */
 #chatbox {
-  flex: ;
+  flex: 1;
   padding: 20px 25px;
   overflow-y: auto;
   background: #f8f9fc;
@@ -134,7 +134,7 @@ body {
 
 /* Text input */
 input[type="text"] {
-  flex-grow: 1;
+  flex-grow: ;
   padding: 14px 18px;
   font-size: 1rem;
   border: 2px solid #c5d1ff;
