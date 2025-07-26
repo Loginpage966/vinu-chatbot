@@ -362,4 +362,8 @@ document.getElementById("userInput").addEventListener("keydown", function (event
     sendMessage(); // Call the same function as the send button
   }
 });
+document.getElementById("userInput").addEventListener("paste", function (e) {
+  e.preventDefault();
+  alert("🚫 Pasting is disabled!");
+});
 
