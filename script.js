@@ -55,9 +55,10 @@ async function getBotReply(message) {
 
   // Wikipedia search
   if (
-    lower.startsWith("wo is ") ||
-    lower.startsWith("wht is ") ||
-    lower.startsWith("telme about ")
+    lower.startsWith("who is ") ||
+    lower.startsWith("what is ") ||
+    lower.startsWith("what are ") ||
+    lower.startsWith("tell me about ")
   ) {
     const topic = message.replace(/(wh is |wht is |tll me about )/i, "").trim();
     return await fetchFromWikipedia(topic);
