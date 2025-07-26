@@ -105,7 +105,15 @@ async function getBotReply(message) {
     { keywords: ["positive electrode"], reply: "The electrode connected to the positive terminal of the external supply of electricity is called positive electrode." },
     { keywords: ["negative electrode"], reply: "The electrode connected to the negative terminal of the external supply of electricity is called negative electrode." },
     { keywords: ["electrolysis"], reply: "The chemical change effected by passing an electric current through an electrolyte is known as electrolysis." },
-    
+    { keywords: ["micro‑organisms"], reply: "Micro-organisms are tiny living organisms that can only be seen under a microscope. They include bacteria, viruses, fungi, and protozoa. Micro-organisms play essential roles in various ecosystems, including nutrient cycling, decomposition, and even human health." },
+    { keywords: ["bacteria"], reply: "Bacteria are single-celled organisms that can be found in various environments, including soil, water, and the human body. They can be beneficial or harmful, playing crucial roles in processes like digestion and disease." },
+    { keywords: ["virus"], reply: "Viruses are microscopic infectious agents that can only replicate inside the living cells of an organism. They can cause diseases in humans, animals, and plants, and are composed of genetic material (DNA or RNA) surrounded by a protein coat." },
+    { keywords: ["fungi"], reply: "Fungi are a diverse group of organisms that include yeasts, molds, and mushrooms. They play important roles in decomposition and nutrient cycling, and some can cause diseases in plants and animals." },
+    { keywords: ["protozoa"], reply: "Protozoa are single-celled eukaryotic organisms that can be found in various environments, including water and soil. They are often motile and can be free-living or parasitic, playing important roles in ecosystems as predators of bacteria and other microorganisms." },
+    { keywords: ["algae"], reply: "Algae are simple, photosynthetic organisms that can be found in various aquatic environments. They range from single-celled phytoplankton to large seaweeds and play a crucial role in producing oxygen and serving as a food source for many aquatic organisms." },
+    { keywords: ["pathogen"], reply: "A pathogen is a microorganism that can cause disease in its host. Pathogens can include bacteria, viruses, fungi, and protozoa, and they can infect humans, animals, and plants." },
+    { keywords: ["disease"], reply: "A disease is a disorder of structure or function in a living organism, often characterized by specific signs and symptoms. Diseases can be caused by various factors, including pathogens, genetic mutations, environmental influences, and lifestyle choices." },
+    { keywords: ["antibiotic"], reply: "An antibiotic is a type of medication used to treat bacterial infections by killing or inhibiting the growth of bacteria. Antibiotics are ineffective against viral infections." },
 ];
 
   for (let item of responses) {
