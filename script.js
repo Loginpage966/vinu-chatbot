@@ -118,6 +118,7 @@ async function getBotReply(message) {
     { keywords: ["examples for antibiotics"], reply: "Some common examples of antibiotics include penicillin, amoxicillin, and ciprofloxacin." },
     { keywords: ["toxins"], reply: "Bio-chemical substances produced by pathogenic bacteria which harm the host's activity are known as toxins.    This is the definition for toxins, is there anything else to talk about." },
     { keywords: ["countries in the world"], reply: `
+      <strong>There are 195 countries in the world today. This total comprises 193 countries that are member states of the United Nations and 2 countries that are non-member observer states: the Holy See and the State of Palestine.</strong><br>
       <strong>🌍 Here are some countries in the world:</strong><br>
       <ul>
         <li>🇺🇸 United States</li>
