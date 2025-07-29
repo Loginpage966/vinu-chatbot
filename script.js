@@ -334,7 +334,8 @@ async function getBotReply(message) {
     }
   }
 
-  return "Hmm... I don't understand that yet 🤖. Try asking something else!";
+  return `Hmm... I don't understand that yet 🤖. You can try searching on Google:<br>
+<a href="https://www.google.com/search?q=${encodeURIComponent(message)}" target="_blank" rel="noopener noreferrer">Search Google for "${message}"</a>`;
 }
 
 // Fetch summary from Wikipedia
