@@ -38,7 +38,7 @@ function addTypingMessage(sender, fullMessage) {
       messageElement.innerHTML = label + textOnly.substring(0, index) + "<span class='cursor'>|</span>";
       index++;
       chatbox.scrollTop = chatbox.scrollHeight;
-      setTimeout(typeLetter, 15);
+      setTimeout(typeLetter, 1);
     } else {
       messageElement.innerHTML = label + fullMessage;
       chatbox.scrollTop = chatbox.scrollHeight;
@@ -317,7 +317,13 @@ async function getBotReply(message) {
 <li>🇿🇲 Zambia</li>
 <li>🇿🇼 Zimbabwe</li>
 </ul>
-    ` }
+    ` },
+    { keywords: ["history of Sri Lanka"], reply: "Sri Lanka's history dates back to the 6th century BCE, with the arrival of Prince Vijaya. The island nation has been influenced by various cultures, including Buddhism, Hinduism, and European colonial powers. From ancient kingdoms to colonial rule and independence, Sri Lanka's history is rich and complex." },
+    { keywords: ["❤", "🧡", "💛", "💚", "💙", "💜", "🤎", "🖤", "💕"], reply: "I’m here for you ❤️ Want to talk about Love?" },
+    { keywords: ["srilanka capital"], reply: "The capital of Sri Lanka is Sri Jayawardenepura Kotte (administrative capital) and Colombo (commercial capital)." },
+    { keywords: ["srilanka culture"], reply: "Sri Lankan culture is a rich blend of Buddhist, Hindu, Muslim, and Western influences. It's known for its vibrant festivals, delicious cuisine, and traditional arts." },
+    { keywords: ["srilanka tourist attractions"], reply: "Some popular tourist attractions in Sri Lanka include Sigiriya (Lion's Rock), Kandy (the cultural capital), Mirissa Beach, and Yala National Park."}
+
 ];
 
   for (let item of responses) {
