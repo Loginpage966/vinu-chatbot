@@ -249,3 +249,13 @@ button:active {
   }
 }
 
+#mic-btn {
+  padding: 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
