@@ -374,29 +374,3 @@ document.getElementById("userInput").addEventListener("paste", function (e) {
   e.preventDefault();
   alert("🚫 Pasting is disabled!");
 });
-let recognition;
-
-function startListening() {
-  if (!('webkitSpeechRecognition' in window)) {
-    alert("Sorry, your browser doesn't support speech recognition.");
-    return;
-  }
-
-  recognition = new webkitSpeechRecognition(); // Chrome-only
-  recognition.lang = "en-US"; // You can change to "si-LK" for Sinhala
-  recognition.interimResults = false;
-  recognition.maxAlternatives = 1;
-
-  recognition.start();
-
-  recognition.onresult = function(event) {
-    const transcript = event.results[0][0].transcript;
-    document.getElementById("input").value = transcript;
-    // Optionally auto-send message
-    // sendMessage();
-  };
-
-  recognition.onerror = function(event) {
-    console.error("Speech recognition error:", event.error);
-  };
-}
