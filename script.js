@@ -375,6 +375,7 @@ document.getElementById("userInput").addEventListener("paste", function (e) {
   e.preventDefault();
   alert("🚫 Pasting is disabled!");
 });
+
 const emojiMap = {
   happy: "😊",
   hello: "👋",
