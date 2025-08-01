@@ -118,7 +118,6 @@ async function getBotReply(message) {
     { keywords: ["antibiotic"], reply: "An antibiotic is a type of medication used to treat bacterial infections by killing or inhibiting the growth of bacteria. Antibiotics are ineffective against viral infections." },
     { keywords: ["examples for antibiotics"], reply: "Some common examples of antibiotics include penicillin, amoxicillin, and ciprofloxacin." },
     { keywords: ["toxins"], reply: "Bio-chemical substances produced by pathogenic bacteria which harm the host's activity are known as toxins.    This is the definition for toxins, is there anything else to talk about." },
-    { keywords: ["🙏 You're welcome!"
     { keywords: ["countries in the world"], reply: `
       <strong>There are 195 countries in the world today. This total comprises 193 countries that are member states of the United Nations and 2 countries that are non-member observer states: the Holy See and the State of Palestine.</strong><br>
       <strong>🌍 Here are all the countries in the world:</strong><br>
@@ -371,11 +370,6 @@ document.getElementById("userInput").addEventListener("keydown", function (event
     sendMessage(); // Call the same function as the send button
   }
 });
-document.getElementById("userInput").addEventListener("paste", function (e) {
-  e.preventDefault();
-  alert("🚫 Pasting is disabled!");
-});
-
 const emojiMap = {
   happy: "😊",
   hello: "👋",
