@@ -12,10 +12,11 @@
     <div id="chatbox">
       <p class="bot">Hi! I'm your AI. How can I help?</p>
     </div>
-    <input type="text" id="userInput" placeholder="Type a message..." />
+    <input type="text" id="userInput" placeholder="Type a message..."oninput="showEmojiSuggestions()">
     
     <button onclick="sendMessage()">Send</button>
   </div>
+  <div id="emoji-suggestions"></div>
 
   <script src="script.js"></script>
 </body>
